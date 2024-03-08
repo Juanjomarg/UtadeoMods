@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  minecraft-server:
+    build: .
+    volumes:
+      - "./papermc:/papermc"
+    ports:
+      - "25565:25565/tcp"
+      - "25565:25565/udp"
+    environment:
+      MC_VERSION: "1.20.1"
+      PAPER_BUILD: "196"
+      EULA: "true"
+      MC_RAM: "4G"
+      JAVA_OPTS: ""
