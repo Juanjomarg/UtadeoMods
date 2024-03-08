@@ -2,10 +2,10 @@ FROM alpine:latest
 
 # Environment variables
 # https://papermc.io/downloads/all
-ENV MC_VERSION="" \
-    PAPER_BUILD="" \
-    EULA="true" \
-    MC_RAM="" \
+ENV MC_VERSION="latest" \
+    PAPER_BUILD="latest" \
+    EULA="false" \
+    MC_RAM="2G" \
     JAVA_OPTS=""
 
 COPY papermc.sh .
